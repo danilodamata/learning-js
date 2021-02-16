@@ -204,37 +204,26 @@ pessoa.apresentacao = function() {
     let peso = pessoa.mostrarPeso();
     let caminhou = pessoa.caminhouQuantosMetros;
     let sexo = pessoa.sexo;
+
+    let sex = 'o';
+    let age = 'anos'
+    let distance = 'metros';
     
 
     if (sexo === 'feminino') {
-        if (idade === 1) {
-            if (caminhou === 1) {
-                return 'Olá, eu sou a ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ano, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metro!'
-            } else {
-                return 'Olá, eu sou a ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ano, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metros!'
-            }
-        } else {
-            if (caminhou === 1) {
-                return 'Olá, eu sou a ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' anos, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metro!'
-            } else {
-                return 'Olá, eu sou a ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' anos, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metros!'
-            }
-        }
-    } else {
-        if (idade ===  1) {
-            if (caminhou === 1) {
-                return 'Olá, eu sou o ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ano, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metro!'
-            } else {
-                return 'Olá, eu sou a ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ano, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metros!'
-            }
-        } else {
-            if (caminhou === 1) {
-                return 'Olá, eu sou o ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' anos, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metro!'
-            } else {
-                return 'Olá, eu sou o ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' anos, ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' metros!'
-            }
-        } 
+        sex = 'a';
     }
+
+    if (idade === 1) {
+        age = 'ano';
+    }
+
+    if (caminhou === 1) {
+        distance = 'metro';
+    }
+
+    return 'Olá, eu sou ' + sex + ' ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ' + age + ', ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' ' + distance + ' !';
+
 }
 
 // Agora, apresente-se ;)
