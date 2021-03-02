@@ -222,7 +222,7 @@ pessoa.apresentacao = function() {
         distance = 'metro';
     }
 
-    return 'Olá, eu sou ' + sex + ' ' + nome + ' ' + sobrenome + ' tenho ' + idade + ' ' + age + ', ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' ' + distance + ' !';
+    return 'Olá, eu sou ' + nome + ' ' + sex + ' ' + sobrenome + ' tenho ' + idade + ' ' + age + ', ' + altura + ', ' + peso + ' e, só hoje, eu já caminhei ' + caminhou + ' ' + distance + ' !';
 
 }
 
