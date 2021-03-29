@@ -4,13 +4,21 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
- let isTruthy = function(arg) {
-    if (arg) {
-        return true
-    } else {
-        return false
+ 
+let isTruthy = function(param) {
+    if(param) {
+        return true;
     }
- }
+    return false;
+}
+
+/* let isTruthy = function(param) {
+    return param ? true : false;
+} */
+
+/* let isTruthy = function(param) {
+    return !!param;
+} */
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(null);
