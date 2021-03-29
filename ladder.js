@@ -5,11 +5,11 @@ ladder.up().up().down().showStep(); */
 let ladder = {
     step: 0,
     up() {
-        this.step++
+        this.step++;
         return this;
     },
     down() {
-        this.step--
+        this.step--;
         return this;
     },
     showStep: function () { 
