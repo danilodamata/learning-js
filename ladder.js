@@ -14,7 +14,7 @@ let ladder = {
     },
     showStep: function () { 
         alert(this.step);
-        return this;
+        return this; // needs to return "this" because we can chain more functions
     }
 };
 
