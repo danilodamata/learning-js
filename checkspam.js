@@ -4,11 +4,7 @@ function checkSpam(str) {
     if ( !str ) {
         return 'empty string'
     }
+    
     let convert = str.toLowerCase();
-    if ( convert.includes('viagra') || convert.includes('xxx')  ) {
-        return true;
-    } else {
-        return false;
-    }
+    return convert.includes('viagra') || convert.includes('xxx'); 
 }
-
